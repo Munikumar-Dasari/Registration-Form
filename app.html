@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.css"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" >
+</head>
+
+<body>
+    <div class='main-container'>
+        <div class="container">
+            <h1 class="title">Registration Form</h1>
+            <form id="registrationForm">
+                <div class='form-container'>
+                    <div class='input-fields'>
+                        <label for='firstname' class='label-text'>First Name</label>
+                        <input id='firstname' type='text' placeholder="Enter Your First Name" class='input-value' />
+                        <p id="errorFirstName" class="error-msg"></p>
+                    </div>
+                    <div class='input-fields'>
+                        <label for='lastname' class='label-text'>Last Name</label>
+                        <input id='lastname' type='text' placeholder="Enter Your Last Name" class='input-value' />
+                        <p id="errorLastName" class="error-msg"></p>
+                    </div>
+                    <div class='input-fields'>
+                        <label for='mail' class='label-text'>E-Mail</label>
+                        <input id='mail' type='email' placeholder="Enter Your E-Mail" class='input-value' />
+                        <p id="errorMail" class="error-msg"></p>
+                    </div>
+                    <div class='input-fields'>
+                        <label for='password' class='label-text'>Password</label>
+                        <input id='password' type='password' placeholder="Enter Password" class='input-value' />
+                        <p id="errorPassword" class="error-msg"></p>
+                    </div>
+                    <div class='input-fields'>
+                        <label for='confirmPassword' class='label-text'>Confirm Password</label>
+                        <input id='confirmPassword' type='password' placeholder="Enter Conform Password" class='input-value' />
+                        <p id="errorConfirmPassword" class="error-msg"></p>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="button" id="submitBtn">Submit</button>
+                    <p id="successText" class="success-msg"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
